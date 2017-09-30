@@ -61,15 +61,19 @@ The following applies to v1.11 firmware.
     -rw-r--r-- 1 edimax edimax 3223683 2014-04-29 IC-3015Wn_v1.11.bin
     282a1f4030696029ba8d008b465e7e25  IC-3015Wn_v1.11.bin
 
-Kernel (suitable for authomatic TFTP flashing):
+## Kernel (suitable for authomatic TFTP flashing):
 
     dd if=IC-3015Wn_v1.11.bin of=kernel_v1.11 bs=1 skip=128 count=1015826
 
-RootFS (without headers):
+## RootFS (without headers):
 
     dd if=IC-3015Wn_v1.11.bin bs=1 skip=1048704 of=rootfs_v1.11
 
-Expected result:
+Produced file is SuqshFS image with LZMA compression. To extract it:
+
+    unsquashfs rootfs_v1.11
+
+## Expected result:
 
     -rw-r--r-- 1 edimax edimax 1015826 2017-09-28 23:36 kernel_v1.11
     -rw-r--r-- 1 edimax edimax 2174979 2017-09-28 23:38 rootfs_v1.11
