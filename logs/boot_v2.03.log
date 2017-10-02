@@ -1,0 +1,224 @@
+
+Booting...
+========== SPI =============
+ 
+---RealTek(RTL8196C)at 2012.03.05-17:46+0800 version v1.1f [16bit](390MHz)
+no rootfs signature at 000E0000!
+no rootfs signature at 000F0000!
+no rootfs signature at 00130000!
+Jump to image start=0x80500000...
+decompressing kernel:
+Uncompressing Linux... done, booting the kernel.
+done decompressing kernel.
+start address: 0x800035d0
+Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Memory: 26700k/32768k available (2700k kernel code, 6068k reserved, 572k data, 108k init, 0k highmem)
+Calibrating delay loop... 388.30 BogoMIPS (lpj=1941504)
+Mount-cache hash table entries: 512
+net_namespace: 524 bytes
+NET: Registered protocol family 16
+bio: create slab <bio-0> at 0
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+TCP: Hash tables configured (established 1024 bind 1024)
+TCP reno registered
+NET: Registered protocol family 1
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+msgmni has been set to 52
+io scheduler noop registered
+io scheduler cfq registered (default)
+Realtek GPIO Driver for Flash Reload Default
+Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled
+serial8250: ttyS0 at MMIO 0x18002000 (irq = 8) is a 16550A
+PPP generic driver version 2.4.2
+MPPE/MPPC encryption/compression module registered
+NET: Registered protocol family 24
+RTL8192C/RTL8188C driver version 1.4 (2010-08-11)
+=====>>INSIDE rtl8192cd_init_one <<=====
+vendor_deivce_id=819110ec
+=====>>EXIT rtl8192cd_init_one <<=====
+=====>>INSIDE rtl8192cd_init_one <<=====
+=====>>EXIT rtl8192cd_init_one <<=====
+=====>>INSIDE rtl8192cd_init_one <<=====
+=====>>EXIT rtl8192cd_init_one <<=====
+=====>>INSIDE rtl8192cd_init_one <<=====
+=====>>EXIT rtl8192cd_init_one <<=====
+=====>>INSIDE rtl8192cd_init_one <<=====
+=====>>EXIT rtl8192cd_init_one <<=====
+=====>>INSIDE rtl8192cd_init_one <<=====
+=====>>EXIT rtl8192cd_init_one <<=====
+
+
+
+Probing RTL8186 10/100 NIC-kenel stack size order[2]...
+chip name: 8196B, chip revid: 0
+  Set 8196C PHY Patch OK
+NOT YET
+Set threshould idx 0
+eth0 added. vid=9 Member port 0x1...
+eth1 added. vid=8 Member port 0x10...
+eth2 added. vid=10 Member port 0x2...
+eth3 added. vid=11 Member port 0x4...
+eth4 added. vid=12 Member port 0x8...
+[peth0] added, mapping to [eth1]...
+SPI INIT
+flash device: 0x400000 at 0xbfe00000
+SPI 1
+Physically mapped flash: Found an alies 0x400000 for the chip at 0x0, MX25L3205D device detect.
+Creating 3 MTD partitions on "Physically mapped flash":
+0x000000000000-0x000000110000 : "boot+cfg+linux"
+0x000000110000-0x000000400000 : "root fs"
+0x000000010000-0x000000400000 : "ipcam"
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+USB 2.0 PHY Patch Done.
+rtl8652-ehci rtl8652-ehci.0: RTL8652 On-Chip EHCI Host Controller
+rtl8652-ehci rtl8652-ehci.0: new USB bus registered, assigned bus number 1
+read synopsys=0
+read synopsys2=0
+rtl8652-ehci rtl8652-ehci.0: irq 9, io base 0x18021000
+rtl8652-ehci rtl8652-ehci.0: USB 0.0 started, EHCI 1.00
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: RTL8652 On-Chip EHCI Host Controller
+usb usb1: Manufacturer: Linux 2.6.30.9 ehci_hcd
+usb usb1: SerialNumber: rtl8652-ehci.0
+usb usb1: configuration #1 chosen from 1 choice
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+rtl8652-ohci rtl8652-ohci.0: RTL8652 OHCI
+rtl8652-ohci rtl8652-ohci.0: new USB bus registered, assigned bus number 2
+rtl8652-ohci rtl8652-ohci.0: irq 9, io mem 0x18020000
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: RTL8652 OHCI
+usb usb2: Manufacturer: Linux 2.6.30.9 ohci_hcd
+usb usb2: SerialNumber: rtl8652
+usb usb2: configuration #1 chosen from 1 choice
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+Linux video capture interface: v2.00
+gspca: main v2.5.0 registered
+usbcore: registered new interface driver uvcvideo
+USB Video Class driver (v0.1.0)
+nf_conntrack version 0.5.0 (512 buckets, 2048 max)
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+NET: Registered protocol family 17
+VFS: Mounted root (squashfs filesystem) readonly on device 31:1.
+Freeing unused kernel memory: 108k freed
+usb 1-1: new high speed USB device using rtl8652-ehci and address 2
+usb 1-1: New USB device found, idVendor=064e, idProduct=c221
+iusb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+nusb 1-1: Product: USB 2.0 Camera
+iusb 1-1: Manufacturer: SuYin
+tusb 1-1: SerialNumber: HF1016-P80A-SS01E-VS-R01.00.00
+ starusb 1-1: configuration #1 chosen from 1 choice
+ted: BusyBox v1.13.4 (2013-02-04 13:48:24 CST)
+uvcvideo: Found UVC 1.00 device USB 2.0 Camera (064e:c221)
+cp: cannot stat '/bin/pppoe.sh': No such file or directory
+/etc/init.d/rcS: line 42: can't create /proc/sys/net/core/hot_list_length: nonexistent directory
+device eth0 entered promiscuous mode
+br0: port 1(eth0) entering forwarding state
+Starting ipcam...
+
+
+BusyBox v1.13.4 (2013-02-04 13:48:24 CST) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+# [videoServer.c:2291] Start videoServer.....
+1970-01-01 00:00:09: (configfile.c.958) opening configfile  /tmp/lighttpd.conf failed: No such file or directory 
+lighttpd-angel.c.141: child (pid=270) exited normally with exitcode: 255
+Semaphore creat id:0
+Share memory creat id:0
+[config.c:2520] Generated XML file size: 6931
+
+[config.c:1512] The XML data is the same with NOR flash one. System won't update system config.
+[ipcam.c:114] *** IPCam main program started. ***
+[ipcam.c:125] Init random number generator...
+[ipcam.c:271] Init random number generator with value: 29504624
+[ipcam.c:129] Init gpio function...
+[ipcam.c:133] Init networking...
+br0: port 1(eth0) entering disabled state
+===> Load_92C_Firmware
+<=== Load_92C_Firmware
+br0: port 1(eth0) entering forwarding state
+device br0 already exists; can't create bridge with the same name
+device eth0 is already a member of a bridge; can't enslave it to bridge br0.
+device wlan0 entered promiscuous mode
+[ipcam.c:137] Check and init wireless...
+[wireless.c:214] pincode:44549152
+Default IP: 192.168.2.3
+iwpriv wlan0 set_mib pwrlevelCCK_A=2525252525252525252323232323
+
+udhcp client (v0.9.8) started
+iwpriv wlan0 set_mib pwrlevelHT40_1S_A=2525252525252525252525252525
+
+route: SIOCADDRT: File exists
+Default IP: 192.168.2.3
+Sending discover...
+===> Load_92C_Firmware
+<=== Load_92C_Firmware
+[videoServer.c:12br0: port 2(wlan0) entering forwarding state
+85] Motion Detection is turned off!!!
+[videoServer.c:1290] Motion Detection Interval=5
+
+[videoServer.c:1048] Resolution 1280x960
+Failed to open /tmp/OSD.jpg
+Improper call to JPEG library in state 200
+[videoServer.c:1104] Motion Detection Param enable 0 delay 5 ,1 56 195 534 302 15 70 , 0 150 50 220 120 3 90 , 0 250 50 320 120 3 90
+1970-01-01 00:00:12: (configfile.c.958) opening configfile  /tmp/lighttpd.conf failed: No such file or directory 
+lighttpd-angel.c.141: child (pid=399) exited normally with exitcode: 255
+[ipcam.c:146] Starting NTP service...
+[ntp.c:46] IPCAM_tz_Minute=180
+[ipcam.c:151] Starting DDNS...
+[ipcam.c:156] Starting UPnP service...
+[ipcam.c:161] Starting Bonjour service...
+[ftp.c:9] /bin/ftp English &
+[gpio.c:345] Turn on LED
+[ipcam.c:191] Starting daemon to check network link status...
+[ipcam.c:195] Starting agent for windows utility...
+[agent.c:782] agentd started  PID:418
+[ipcam.c:202] Starting web server...
+[ftp.c:162] FTP Start...
+[link_status.c:167] Network initial status: WLAN
+[link_status.c:189] recheck and update link status.
+[http.c:488] recvCmdRequestThread thread start..
+Sending discover...
+Sending select for 192.168.1.9...
+Lease of 192.168.1.9 obtained, lease time 43200
+deleting routers
+route: SIOCDELRT: No such process
+adding dns 192.168.1.1
+[smtp.c:2015] SMTP client: testSMTP() starts.
+Default IP: 192.168.2.3
+udhcp client (v0.9.8) started
+route: SIOCADDRT: File exists
+Default IP: 192.168.2.3
+Sending discover...
+Sending select for 192.168.1.9...
+Lease of 192.168.1.9 obtained, lease time 43200
+deleting routers
+route: SIOCDELRT: No such process
+adding dns 192.168.1.1
+[mod_mjpg_streaming.c:513] start connecting to video server...
+[mod_mjpg_streaming.c:551] connected to video server OK
+cat: can't open '/tmp/run_igd.pid': No such file or directory
+cat: can't open '/tmp/run_igd.pid': No such file or directory
+[bonjour.c:21] Bonjour stop..
+[link_status.c:219] Network link status change to WLAN
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+255.255.255.255 0.0.0.0         255.255.255.255 UH    0      0        0 br0
+192.168.1.0     0.0.0.0         255.255.255.0   U     0      0        0 br0
+0.0.0.0         192.168.1.1     0.0.0.0         UG    0      0        0 br0
+sys.lan: Unknown host
+[ntpclient.c:483] NTPCLIENT Update Date & Time Failed!!
+[ntpclient.c:326] time synchronized to 2017/10/02 09:42:03
+25567 00084.660   10000.0     73.4  1506937239328663.9  69976.8         0

@@ -3,9 +3,18 @@ Information collected about Edimax IC-3015Wn wifi camera.
 
 Local machine used was Gentoo Linux.
 
+# Hardware
+
+* RTL8196C SoC (380Mhz MIPS (RLX4181) core).
+* 32MB RAM
+* 4MB SPI Flash
+* SuYin 1.3Mpixel camera (on USB 2.0 bus).
+* 100Mbps LAN
+* WiFi (802.11b/g/n)
+
 # Serial interface
 TTL (3.3V) serial interface (38400 8N1) is present on **TP6** (RX) ant **TP8** (TX)
-testpoints (CPU 2 and 3 pins routed to the PCB opposite side). GND can be
+testpoints (RTL8196C pins 36 and 37 routed to the opposite PCB side). GND can be
 attached to any ground pin (eg. grounded pins of LAN connector).
 
 # Debricking
@@ -80,8 +89,13 @@ Produced file is SuqshFS image with LZMA compression. To extract it:
     MD5(kernel_v1.11)= bd0df7c9eb8e954a86cc5e560746d096
     MD5(rootfs_v1.11)= ff83ddf1e8a1e30340094db57de2b3b4
 
+# Compatible firmware
+
+Edimax IC3115W seams to have compatible firmware (IC-3115W v2.03 firmware works on IC-3015Wn). Flashed via TFTP/serial.
+
 # Links
 * [Oficial site, v1.11 firmware, manuals, software, etc](http://www.edimax.com/edimax/download/download/data/edimax/global/download/for_home/home_legacy_products/home_legacy_ip_cameras_network_cameras/ic-3015wn)
+* [Similar, maybe compatible device](http://www.edimax.com/edimax/download/download/data/edimax/global/download/for_home/home_network_cameras/home_network_cameras_indoor_fixed/ic-3115w)
 * [v1.9 firmware](http://www.edimax.us/html/english/frames/b-download.htm)
 * [RealTek bootloder](https://wiki.openwrt.org/doc/techref/bootloader/realtek)
 * [Similar firmware principles](https://wiki.openwrt.org/toh/upvel/ur825ac)
